@@ -49,6 +49,7 @@ The above example demonstrates several features of Algol:
 
 <details>
 <summary>Customization parameters of the `algol()` function</summary>
+
 - `box-stroke` (`stroke`, default: `.5pt + black`): [stroke](https://typst.app/docs/reference/visualize/stroke/) of the outer box
 - `box-inset` (`length|dictionary`, default: `.4em`): [inset](https://typst.app/docs/reference/layout/box/#parameters-inset) of the outer box
 - `indent-length` (`length`, default: `1.5em`): indentation length of the algorithm
@@ -69,6 +70,7 @@ The above example demonstrates several features of Algol:
 
 <details>
 <summary>Default line number formatting function for the `line-number-fmt` parameter</summary>
+
 ```typst
 #let line-number-fmt-default = n-str => box(width: .8em, baseline: .65em,
     align(horizon + right, text(size: .8em)[*#n-str*])
@@ -78,6 +80,7 @@ The above example demonstrates several features of Algol:
 
 <details>
 <summary>Customization parameters of the `enable-line-refs()` show rule</summary>
+
 - `line-numbering` (`str`, default: `"1"`): [numbering](https://typst.app/docs/reference/model/numbering/) of the line references
 - `line-supplement` (`content`, default: `[line]`): supplement used before the line numbers in the reference
 - `label-pattern` (`regex`, default: `regex("^line:.*")`): pattern for the line labels (by default they must start with `"line:"`)
