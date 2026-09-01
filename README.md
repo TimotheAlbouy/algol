@@ -34,7 +34,7 @@ In contrast to its LaTeX counterparts, Algol provides a lighter notation style b
 If element $e$ is in array $A$, the algorithm returns its index at @line:found-element, otherwise it returns $"error"$ at @line:error.
 ```
 
-<img src="gallery/bin-search.png" alt="Binary search algorithm in Algol" width="50%">
+<img src="gallery/bin-search.png" alt="Binary search algorithm in Algol" width="60%">
 
 The above example demonstrates several features of Algol:
 - Both "`-`" lists ([bullet lists](https://typst.app/docs/reference/model/list/)) and "`+`" lists ([numbered lists](https://typst.app/docs/reference/model/enum/)) are used in Algol
@@ -157,4 +157,4 @@ caption: [
 @alg:fibonacci describes the recursive algorithm to compute the $n$-th Fibonacci number.
 ```
 
-<img src="gallery/fibonacci.png" alt="Fibonacci's algorithm in Algol" width="50%">
+<img src="gallery/fibonacci.png" alt="Fibonacci's algorithm in Algol" width="60%">
