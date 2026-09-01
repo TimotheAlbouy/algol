@@ -37,7 +37,7 @@ If element $e$ is in array $A$, the algorithm returns its index at @line:found-e
 <img src="gallery/bin-search.png" alt="Binary search algorithm in Algol">
 
 The above example demonstrates several features of Algol:
-- Both "`-`" lists ([bullet lists](https://typst.app/docs/reference/model/list/)) and "`+`" lists ([numbered lists](https://typst.app/docs/reference/model/enum/)) can be used
+- Both "`-`" lists ([bullet lists](https://typst.app/docs/reference/model/list/)) and "`+`" lists ([numbered lists](https://typst.app/docs/reference/model/enum/)) are used in Algol
     - the "`-`" lists are used to create _finished_ code blocks, which have a hook at the end of the left-side vertical guide
     - the "`+`" lists are used to create _unfinished_ code blocks, which do not have a hook (ex: lines 7 and 9)
     - lists of depth 0 have no left-side vertical guide or hook (ex: the list starting at line 1)
