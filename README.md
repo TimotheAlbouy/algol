@@ -34,6 +34,8 @@ In contrast to its LaTeX counterparts, Algol provides a lighter notation style b
 If element $e$ is in array $A$, the algorithm returns its index at @line:found-element, otherwise it returns $"error"$ at @line:error.
 ```
 
+<img src="gallery/bin-search.png" alt="Binary search algorithm in Algol">
+
 The above example demonstrates several features of Algol:
 - Both "`-`" lists ([bullet lists](https://typst.app/docs/reference/model/list/)) and "`+`" lists ([numbered lists](https://typst.app/docs/reference/model/enum/)) can be used
     - the "`-`" lists are used to create _finished_ code blocks, which have a hook at the end of the left-side vertical guide
@@ -48,7 +50,7 @@ The above example demonstrates several features of Algol:
 ## Algol Customization
 
 <details>
-<summary>Customization parameters of the `algol()` function</summary>
+<summary>Customization parameters of the "algol" function</summary>
 
 - `box-stroke` (`stroke`, default: `.5pt + black`): [stroke](https://typst.app/docs/reference/visualize/stroke/) of the outer box
 - `box-inset` (`length|dictionary`, default: `.4em`): [inset](https://typst.app/docs/reference/layout/box/#parameters-inset) of the outer box
@@ -69,7 +71,7 @@ The above example demonstrates several features of Algol:
 </details>
 
 <details>
-<summary>Default line number formatting function for the `line-number-fmt` parameter</summary>
+<summary>Default line number formatting function for the "line-number-fmt" parameter</summary>
 
 ```typst
 #let line-number-fmt-default = n-str => box(width: .8em, baseline: .65em,
@@ -154,3 +156,5 @@ caption: [
 
 @alg:fibonacci describes the recursive algorithm to compute the $n$-th Fibonacci number.
 ```
+
+<img src="gallery/fibonacci.png" alt="Fibonacci's algorithm in Algol">

@@ -20,4 +20,5 @@
   - *return* $"error"$        <line:error>
 ])
 
-If element $e$ is in array $A$, the algorithm returns its index at @line:found-element, otherwise it returns $"error"$ at @line:error.
+If element $e$ is in array $A$, the algorithm returns its index at @line:found-element.
+Otherwise it returns $"error"$ at @line:error.
