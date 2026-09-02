@@ -121,7 +121,7 @@ The Algol package does not provide default functions for typesetting pseudocode 
 
 ### Combining Everything
 
-The following example combines all the previous techniques.
+The following example combines all the techniques presented in this section.
 
 ```typst
 #import "../algol.typ": algol
