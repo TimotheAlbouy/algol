@@ -8,7 +8,7 @@
 #let algorithm = figure.with(kind: "algorithm", supplement: [Algorithm])
 
 #let my-algol(it) = {
-  show regex("if|then|else|return"): it => text(blue, strong(it))
+  show regex("\\b(if|then|else|return)\\b"): it => text(blue, strong(it))
   algol(it)
 }
 
