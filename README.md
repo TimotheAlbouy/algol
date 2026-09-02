@@ -81,7 +81,7 @@ The above example demonstrates several features of Algol:
 </details>
 
 <details>
-<summary>Customization parameters of the `enable-line-refs()` show rule</summary>
+<summary>Customization parameters of the "enable-line-refs()" show rule</summary>
 
 - `line-numbering` (`str`, default: `"1"`): [numbering](https://typst.app/docs/reference/model/numbering/) of the line references
 - `line-supplement` (`content`, default: `[line]`): supplement used before the line numbers in the reference
@@ -121,7 +121,7 @@ The Algol package does not provide default functions for typesetting pseudocode 
 
 ### Combining Everything
 
-The following example combines all of the previous techniques.
+The following example combines all the previous techniques.
 
 ```typst
 #import "../algol.typ": algol
