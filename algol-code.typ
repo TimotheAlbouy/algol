@@ -1,4 +1,4 @@
-// ============ ALGOL INTERNALS ============ //
+// ============ ALGOL CODE INTERNALS ============ //
 
 #let _algol-line-nb = counter("_algol-line-nb")
 #let _algol-depth = counter("_algol-depth")
@@ -41,7 +41,7 @@
   _algol-depth.update(n => n - 1)
 }
 
-// ============ ALGOL INTERFACE ============ //
+// ============ ALGOL CODE INTERFACE ============ //
 
 #let no-next-line-nb = context _algol-numbering-enabled.update(false)
 

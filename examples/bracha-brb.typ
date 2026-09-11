@@ -1,4 +1,4 @@
-#import "@preview/algol:0.1.0": algol
+#import "@preview/algol-code:0.1.0": algol
 
 #set page(height: auto, width: 40em, margin: 1em)
 #set par(justify: true)

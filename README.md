@@ -1,10 +1,10 @@
-# Algol
+# Algol Code
 
-Algol is a flexible [Typst](https://typst.app/) package for typesetting algorithms and pseudocode using light notations.
+Algol Code is a flexible [Typst](https://typst.app/) package for typesetting algorithms and pseudocode using light notations.
 Its name is inspired by the [Algol star](https://en.wikipedia.org/wiki/Algol) of the Perseus constellation, and by the [ALGOL](https://en.wikipedia.org/wiki/ALGOL) family of programming languages.
 
 Algorithms are written as ordinary Typst nested lists, so the source stays close to what you see on the page.
-The default appearance reproduces the look and feel of the [algorithm2e](https://ctan.org/pkg/algorithm2e) LaTeX package, and nearly every visual aspect can be adjusted (see [customization parameters](#algol-customization)).
+The default appearance reproduces the look and feel of the [algorithm2e](https://ctan.org/pkg/algorithm2e) LaTeX package, and nearly every visual aspect can be adjusted (see [customization parameters](#algol-code-customization)).
 
 - **Light notation**: nested bullet and numbered lists, no dedicated block commands;
 - **Finished and unfinished blocks**: vertical guides with or without a closing hook;
@@ -15,7 +15,7 @@ The default appearance reproduces the look and feel of the [algorithm2e](https:/
 ## Quick Start
 
 ```typst
-#import "@preview/algol:0.1.0": algol, enable-line-refs, no-next-line-nb
+#import "@preview/algol-code:0.1.0": algol, enable-line-refs, no-next-line-nb
 
 #set page(height: auto, width: 25em, margin: 1em)
 #set par(justify: true)
@@ -40,7 +40,7 @@ The default appearance reproduces the look and feel of the [algorithm2e](https:/
 If element $e$ is in array $A$, the algorithm returns its index at @line:found-element, otherwise it returns $"error"$ at @line:error.
 ```
 
-<img src="gallery/bin-search.png" alt="Binary search algorithm in Algol" width="60%">
+<img src="gallery/bin-search.png" alt="Binary search algorithm in Algol Code" width="60%">
 
 This example demonstrates the three main features of Algol.
 
@@ -57,7 +57,7 @@ This example demonstrates the three main features of Algol.
 
 **Disabling a line number.** `#no-next-line-nb` removes the number of a single line, the **next** one, not the previous one (in the example, the comment between lines 1 and 2).
 
-## Algol Customization
+## Algol Code Customization
 
 <details>
 <summary>Customization parameters of the "algol" function</summary>
@@ -109,12 +109,12 @@ This example demonstrates the three main features of Algol.
 
 ## User-Side Features
 
-Algol aims to be unopinionated but customizable.
+Algol Code aims to be unopinionated but customizable.
 To keep its API small, it deliberately leaves the following features out, each of them takes only a couple of lines to implement on your side.
 
 ### Algorithm Keywords
 
-Algol has no built-in keywords such as `if`, `else` or `while`.
+Algol Code has no built-in keywords such as `if`, `else` or `while`.
 You can emphasize your own set of keywords directly in the algorithm (as in the [quick start example](#quick-start)), or with a show rule:
 
 ```typst
@@ -125,7 +125,7 @@ The `\b` word boundaries keep the rule from matching inside longer words (for in
 
 ### Embedding in Figures
 
-A figure type for Algol pseudocode is also defined on the user side:
+A figure type for Algol Code is also defined on the user side:
 
 ```typst
 #let algorithm = figure.with(kind: "algorithm", supplement: [Algorithm])
@@ -133,7 +133,7 @@ A figure type for Algol pseudocode is also defined on the user side:
 
 ### Pseudocode Comments
 
-Algol provides no comment functions, but they are straightforward to write:
+Algol Code provides no comment functions, but they are straightforward to write:
 
 ```typst
 #let lcomment(c) = [$triangle.small.r$ _ #c _]          // left-aligned comment
@@ -145,7 +145,7 @@ Algol provides no comment functions, but they are straightforward to write:
 The following example puts all of the above together.
 
 ```typst
-#import "@preview/algol:0.1.0": algol
+#import "@preview/algol-code:0.1.0": algol
 
 #set page(height: auto, width: 25em, margin: 1em)
 #set par(justify: true)
@@ -178,4 +178,4 @@ caption: [
 @alg:fibonacci describes the recursive algorithm to compute the $n$-th Fibonacci number.
 ```
 
-<img src="gallery/fibonacci.png" alt="Fibonacci's algorithm in Algol" width="60%">
+<img src="gallery/fibonacci.png" alt="Fibonacci's algorithm in Algol Code" width="60%">

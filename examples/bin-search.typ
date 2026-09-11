@@ -1,4 +1,4 @@
-#import "@preview/algol:0.1.0": algol, enable-line-refs, no-next-line-nb
+#import "@preview/algol-code:0.1.0": algol, enable-line-refs, no-next-line-nb
 
 #set page(height: auto, width: 25em, margin: 1em)
 #set par(justify: true)
